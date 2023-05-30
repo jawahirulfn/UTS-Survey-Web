@@ -331,8 +331,10 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li><a href="<?= base_url('admin/index') ?>"><i class="fa fa-home"></i> <span>dashboard</span></a></li>
-          <li><a href="#"><i class="fa fa-file"></i> <span>Manage Pertanyaan</span></a></li>
+          <li><a href="<?= base_url('/') ?>"><i class="fa fa-dashboard"></i> <span>survey</span></a></li>
+          <li><a href="<?= base_url('question') ?>"><i class="fa fa-file"></i> <span>Manage Pertanyaan</span></a></li>
+          
+          
         </ul>
       </section>
       <!-- /.sidebar -->

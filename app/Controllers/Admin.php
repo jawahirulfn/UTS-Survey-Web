@@ -6,6 +6,11 @@ class Admin extends BaseController
 {
     public function index()
     {
-        return view('admin/dashboard');
+        return view('admin/survey');
+    }
+
+    public function manage_pertanyaan()
+    {
+        return view('admin/manage_pertanyaan');
     }
 }
