@@ -9,8 +9,8 @@ class Admin extends BaseController
         return view('admin/survey');
     }
 
-    public function manage_pertanyaan()
-    {
-        return view('admin/manage_pertanyaan');
-    }
+    // public function manage_pertanyaan()
+    // {
+    //     return view('admin/manage_pertanyaan');
+    // }
 }

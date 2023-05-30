@@ -4,33 +4,72 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Dashboard
-      <small>Control panel</small>
+      Manage Pertanyaan
     </h1>
-    <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Dashboard</li>
-    </ol>
   </section>
   <!-- Main content -->
   <section class="content">
     <div class="row">
       <div class="col-md-12">
         <div class="box">
+          <!-- Modal Tambah Data-->
           <div class="box-header with-border">
-            <h3 class="box-title">Bordered Table</h3>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-default">
+              + Tambah Pertanyaan
+            </button>
+            <div class="modal fade" id="modal-default">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Pertanyaan Survey</h4>
+                  </div>
+                  <form action="<?= base_url('question/simpan'); ?>" method="POST">
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label>Pertanyaan</label>
+                        <input type="text" class="form-control" id="pertanyaan" name="question" placeholder="Tambahkan Pertanyaan">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table class="table table-bordered">
               <tr>
-                <th>id</th>
+                <th>No.</th>
                 <th>Question</th>
+                <th colspan="2" style="text-align: center;">Action</th>
               </tr>
-              <?php foreach ($quest as $row) : ?>
+              <?php $no = 1;
+              foreach ($quest as $row) : ?>
                 <tr>
-                  <td><?= $row->id; ?></td>
+                  <td><?= $no++; ?></td>
                   <td><?= $row->question; ?></td>
+                  <td class="d-flex">
+                    <a href="<?= base_url('question/edit/' . $row->id) ?>">
+                      <button type="button" class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Update</button>
+                    </a>
+
+                  </td>
+                  <td>
+                    <form action="<?= site_url('question/hapus/' . $row->id); ?>" method="post">
+                      <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                    </form>
+                  </td>
+
+
+                  <!--modal  -->
                 </tr>
               <?php endforeach ?>
             </table>
@@ -49,6 +88,13 @@
         <!-- /.box -->
   </section>
   <!-- /.content -->
+  <!-- Modal Update -->
+  <?php foreach ($quest as $row) : ?>
+
+  <?php endforeach ?>
+
+
 </div>
+
 <!-- /.content-wrapper -->
 <?= view('layout/footer'); ?>

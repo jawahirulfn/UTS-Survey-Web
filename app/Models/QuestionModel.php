@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class QuestionModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'questions';
+    protected $table            = 'question';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['question'];
 
     // Dates
     protected $useTimestamps = false;
@@ -45,4 +45,11 @@ class QuestionModel extends Model
 
         return $query->getResult();
     }
+
+    // public function simpanData($table, $data)
+    // {
+    //     $this->db->table($table)->insert($data);
+
+    //     return true;
+    // }
 }
