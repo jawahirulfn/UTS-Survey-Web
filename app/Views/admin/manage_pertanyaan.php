@@ -29,7 +29,7 @@
                     <div class="modal-body">
                       <div class="form-group">
                         <label>Pertanyaan</label>
-                        <input type="text" class="form-control" id="pertanyaan" name="question" placeholder="Tambahkan Pertanyaan">
+                        <input type="text" class="form-control" id="pertanyaan" name="name_question" placeholder="Tambahkan Pertanyaan">
                       </div>
                     </div>
                     <div class="modal-footer">
@@ -55,15 +55,15 @@
               foreach ($quest as $row) : ?>
                 <tr>
                   <td><?= $no++; ?></td>
-                  <td><?= $row->question; ?></td>
+                  <td><?= $row->name_question; ?></td>
                   <td class="d-flex">
-                    <a href="<?= base_url('question/edit/' . $row->id) ?>">
+                    <a href="<?= base_url('question/edit/' . $row->id_question) ?>">
                       <button type="button" class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Update</button>
                     </a>
 
                   </td>
                   <td>
-                    <form action="<?= site_url('question/hapus/' . $row->id); ?>" method="post">
+                    <form action="<?= site_url('question/hapus/' . $row->id_question); ?>" method="post">
                       <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Delete</button>
                     </form>
                   </td>

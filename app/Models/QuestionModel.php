@@ -8,12 +8,12 @@ class QuestionModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'question';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_question';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['question'];
+    protected $allowedFields    = ['name_question'];
 
     // Dates
     protected $useTimestamps = false;
@@ -41,7 +41,7 @@ class QuestionModel extends Model
 
     public function getdata()
     {
-        $query = $this->db->query("SELECT * FROM question ORDER BY id ASC");
+        $query = $this->db->query("SELECT * FROM question ORDER BY id_question ASC");
 
         return $query->getResult();
     }

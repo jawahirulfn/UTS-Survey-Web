@@ -37,7 +37,7 @@ class Question extends BaseController
 
     public function edit($id)
     {
-        $data = $this->pertanyaan->where('id', $id)->first();
+        $data = $this->pertanyaan->where('id_question', $id)->first();
         return view('admin/update_pertanyaan', $data);
     }
 

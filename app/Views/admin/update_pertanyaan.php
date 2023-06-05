@@ -6,10 +6,10 @@
     </div>
     <section class="content">
         <div class="row">
-            <form action="<?= site_url('question/update/' . $id) ?>" method="post">
+            <form action="<?= site_url('question/update/' . $id_question) ?>" method="post">
                 <div class="form-group">
                     <label>Update Pertanyaan</label>
-                    <input type="text" class="form-control" id="pertanyaan" name="question" value="<?= $question ?>">
+                    <input type="text" class="form-control" id="pertanyaan" name="name_question" value="<?= $name_question ?>">
                 </div>
                 <button class="btn btn-sm btn-primary" type="submit">Update</button>
             </form>
