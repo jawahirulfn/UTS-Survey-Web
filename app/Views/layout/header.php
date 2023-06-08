@@ -53,7 +53,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>A</b>LT</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE</span>
+        <span class="logo-lg"><b>Web</b>Survey</span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
@@ -335,7 +335,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li><a href="<?= base_url('/') ?>"><i class="fa fa-dashboard"></i> <span>survey</span></a></li>
+          <li><a href="<?= base_url('user') ?>"><i class="fa fa-dashboard"></i> <span>survey</span></a></li>
           <li><a href="<?= base_url('question') ?>"><i class="fa fa-file"></i> <span>Manage Pertanyaan</span></a></li>
 
 

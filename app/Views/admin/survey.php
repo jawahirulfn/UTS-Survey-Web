@@ -19,19 +19,29 @@
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form">
+                    <form role="form" action="<?= base_url('User/create') ?>" method="post">
+                        <?php csrf_field() ?>
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Nama</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1">
+                                <input type="text" class="form-control" name="nama_user" id="exampleInputEmail1">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">NIM</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1">
+                                <input type="text" class="form-control" name="nim" id="exampleInputPassword1">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Program Studi</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1">
+
+                                <select class="form-control" name="id_prodi" id="id_prodi">
+                                    <option value="">Pilih Program Studi</option>
+
+                                    <?php foreach ($jurusan as $value => $row) : ?>
+                                        <option value="<?= $row['id_prodi']; ?>">
+                                            <?= $row['nama_prodi']; ?>
+                                        </option>
+                                    <?php endforeach ?>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
