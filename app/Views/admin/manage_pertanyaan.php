@@ -67,9 +67,6 @@
                       <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Delete</button>
                     </form>
                   </td>
-
-
-                  <!--modal  -->
                 </tr>
               <?php endforeach ?>
             </table>
