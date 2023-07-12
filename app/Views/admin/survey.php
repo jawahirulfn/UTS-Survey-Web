@@ -46,12 +46,12 @@
                                     <?php endforeach ?>
                                 </select>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
                                 <input type="file" id="exampleInputFile">
                                 <br>
                                 <small style="color:crimson;">* Upload foto data diri</small>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!-- /.box-body -->
@@ -76,8 +76,11 @@
                     <div class="box-body">
                         <table class="table table-bordered">
                             <tr>
-                                <th style="width: 10px">No</th>
+                                <th sttdyle="width: 10px">No</th>
                                 <th>Pertanyaan</th>
+                            </tr>
+                            <tr>
+                            
                             </tr>
                         </table>
                     </div>
