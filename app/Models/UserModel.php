@@ -39,9 +39,5 @@ class UserModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getUser()
-    {
-        
-        
-    }
+    
 }
