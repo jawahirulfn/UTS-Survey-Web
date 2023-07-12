@@ -3,9 +3,12 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>
-            Form Survey
-        </h1>
+        <div>
+            <h1>
+                Form Survey
+            </h1>
+        </div>
+
     </section>
     <!-- Main content -->
     <section class="content">
@@ -60,58 +63,36 @@
                 </div>
                 <!-- /.box -->
             </div>
-            <table class="table table-bordered table-striped dataTable">
-                <thead>
-                    <tr>
-                        <th style="width:20px">No</th>
-                        <th>Pertanyaan</th>
-                        <th style="width:70px">Sangat Kurang</th>
-                        <th style="width:70px">Kurang</th>
-                        <th style="width:70px">Cukup</th>
-                        <th style="width:70px">Baik</th>
-                        <th style="width:70px">Sangat Baik</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Kepastian (assurance): kemampuan dosen, tenaga kependidikan, dan pengelola untuk memberi keyakinan kepada mahasiswa bahwa pelayanan yang diberikan telah sesuai dengan ketentuan.</td>
-                        <td>
-                            <input type="radio" name='radio_1' value="SK">
-                        </td>
-                        <td>
-                            <input type="radio" name='radio_1' value="K">
-                        </td>
-                        <td>
-                            <input type="radio" name='radio_1' value="C">
-                        </td>
-                        <td>
-                            <input type="radio" name='radio_1' value="B">
-                        </td>
-                        <td>
-                            <input type="radio" name='radio_1' value="SB">
-                        </td>
-                    </tr>
-
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>
-                            <div class="icheckbox_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" id="isvalid_1" name="isvalid" value="1" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                        </th>
-                        <th colspan="5">Jawaban diatas telah valid dan tidak perlu diubah lagi</th>
-                        <th>
-                            <button type="button" class="btn btn-sm btn-success" data-type="save">
-                                <i class="fa fa-save"></i> Simpan</button>
-                        </th>
-                    </tr>
-                </tfoot>
-            </table>
-
-        </div>
-
     </section>
 
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title" style="color:green"><b>Survey Kinerja Dosen</b></h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width: 10px">No</th>
+                                <th>Pertanyaan</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+    </section>
 </div>
 
 

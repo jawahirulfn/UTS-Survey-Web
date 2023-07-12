@@ -3,9 +3,9 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1>
-      Manage Pertanyaan
-    </h1>
+    <div class="div">
+      <h1>Manage Pertanyaan</h1>
+    </div>
   </section>
   <!-- Main content -->
   <section class="content">
@@ -48,7 +48,7 @@
             <table class="table table-bordered">
               <tr>
                 <th>No.</th>
-                <th>Question</th>
+                <th>Pertanyaan</th>
                 <th colspan="2" style="text-align: center;">Action</th>
               </tr>
               <?php $no = 1;
@@ -60,7 +60,6 @@
                     <a href="<?= base_url('question/edit/' . $row->id_question) ?>">
                       <button type="button" class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Update</button>
                     </a>
-
                   </td>
                   <td>
                     <form action="<?= site_url('question/hapus/' . $row->id_question); ?>" method="post">
@@ -84,13 +83,6 @@
         </div>
         <!-- /.box -->
   </section>
-  <!-- /.content -->
-  <!-- Modal Update -->
-  <?php foreach ($quest as $row) : ?>
-
-  <?php endforeach ?>
-
-
 </div>
 
 <!-- /.content-wrapper -->
